@@ -2,6 +2,10 @@ function rand(max) {
     return Math.floor(Math.random() * max);
 }
 
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
 function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -581,4 +585,10 @@ function makeMaze() {
     if (document.getElementById("mazeContainer").style.opacity < "100") {
         document.getElementById("mazeContainer").style.opacity = "100";
     }
+    if (isMobileDevice())
+    {
+        let but=document.getElementById("startMazeBtn");
+        but.value="Use your finger and help Mooshak reach Lord Ganesha";
+    }
 }
+

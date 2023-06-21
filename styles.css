@@ -32,8 +32,6 @@ select {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
-  height: 45px;
-  width: 150px;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -132,6 +130,7 @@ select:focus {
     margin-top: 2rem;
     font-weight: 600; 
     background: linear-gradient(to bottom, #FFD700, #FF8C00);
+    white-space: normal;
 }
 
 @media screen and (max-width: 900px) {
@@ -151,7 +150,7 @@ select:focus {
   #startMazeBtn{
     align-items: center;
     width:90%;
-    height:4rem;
+    /* height:4rem; */
     font-size: 0.8rem;
     font-weight: 600;
   }

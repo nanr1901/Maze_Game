@@ -529,7 +529,7 @@ window.onload = function () {
     };
     sprite = new Image();
     sprite.src =
-        "mooshak.jpg" +
+        "mooshak.png" +
         "?" +
         new Date().getTime();
     sprite.setAttribute("crossOrigin", " ");

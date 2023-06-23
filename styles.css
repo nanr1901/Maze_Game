@@ -133,6 +133,8 @@ select:focus {
     white-space: normal;
 }
 
+
+
 @media screen and (max-width: 900px) {
     #startMazeBtn{
         font-size: 1.3rem;

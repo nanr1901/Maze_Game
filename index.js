@@ -19,7 +19,7 @@ function changeBrightness(factor, sprite) {
     virtCanvas.width = 500;
     virtCanvas.height = 500;
     var context = virtCanvas.getContext("2d");
-    context.drawImage(sprite, 0, 0, 500, 500);
+    context.drawImage(sprite, 0, 0, 520, 520);
 
     var imgData = context.getImageData(0, 0, 500, 500);
 
@@ -577,7 +577,7 @@ function makeMaze() {
         player.unbindKeyDown();
         player = null;
     }
-    difficulty = 12;
+    difficulty = 12;   //increase value to increase difficulty
     cellSize = mazeCanvas.width / difficulty;
     maze = new Maze(difficulty, difficulty);
     draw = new DrawMaze(maze, ctx, cellSize, finishSprite);

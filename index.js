@@ -529,7 +529,7 @@ window.onload = function () {
     };
     sprite = new Image();
     sprite.src =
-        "punjabi.jpg" +
+        "muslim.jpg" +
         "?" +
         new Date().getTime();
     sprite.setAttribute("crossOrigin", " ");
@@ -541,7 +541,7 @@ window.onload = function () {
     };
 
     finishSprite = new Image();
-    finishSprite.src = "gurudwara.png" +
+    finishSprite.src = "mosque.jpg" +
         "?" +
         new Date().getTime();
     finishSprite.setAttribute("crossOrigin", " ");
@@ -588,7 +588,7 @@ function makeMaze() {
     if (isMobileDevice())
     {
         let but=document.getElementById("startMazeBtn");
-        but.value="Use your finger and help the Sikh boy reach the Gurudwara";
+        but.value="Use your finger and help the Muslim boy reach the Mosque";
     }
 }
 

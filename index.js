@@ -577,7 +577,7 @@ function makeMaze() {
         player.unbindKeyDown();
         player = null;
     }
-    difficulty = 15;   //increase value to increase difficulty
+    difficulty = 18;   //increase value to increase difficulty
     cellSize = mazeCanvas.width / difficulty;
     maze = new Maze(difficulty, difficulty);
     draw = new DrawMaze(maze, ctx, cellSize, finishSprite);

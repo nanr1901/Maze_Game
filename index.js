@@ -529,7 +529,7 @@ window.onload = function () {
     };
     sprite = new Image();
     sprite.src =
-        "mooshak.png" +
+        "punjabi.jpg" +
         "?" +
         new Date().getTime();
     sprite.setAttribute("crossOrigin", " ");
@@ -541,7 +541,7 @@ window.onload = function () {
     };
 
     finishSprite = new Image();
-    finishSprite.src = "ganesha.jpg" +
+    finishSprite.src = "gurudwara.png" +
         "?" +
         new Date().getTime();
     finishSprite.setAttribute("crossOrigin", " ");
@@ -577,7 +577,7 @@ function makeMaze() {
         player.unbindKeyDown();
         player = null;
     }
-    difficulty = 12;   //increase value to increase difficulty
+    difficulty = 15;   //increase value to increase difficulty
     cellSize = mazeCanvas.width / difficulty;
     maze = new Maze(difficulty, difficulty);
     draw = new DrawMaze(maze, ctx, cellSize, finishSprite);
@@ -588,7 +588,7 @@ function makeMaze() {
     if (isMobileDevice())
     {
         let but=document.getElementById("startMazeBtn");
-        but.value="Use your finger and help Mooshak reach Lord Ganesha";
+        but.value="Use your finger and help the Sikh boy reach the Gurudwara";
     }
 }
 
